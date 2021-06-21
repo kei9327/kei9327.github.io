@@ -1,0 +1,45 @@
+title: Janghyeok Park
+description: >-
+  Mobile Service Developer
+url: "https://kei9327.github.io"
+name: Janghyeok Park
+github: kei9327
+email: hazuki21@naver.com
+google_analytics: 
+
+exclude: [README.md, Gemfile, Gemfile.lock]
+
+comment:
+  enabled: true
+  repo: kei9327/kei9327.github.io
+  issue-term: pathname
+  theme: github-light
+
+collections:
+  pages:
+    output: true
+  projects:
+    output: true
+  tags:
+    output: true
+
+defaults:
+  - scope:
+      type: pages
+    values:
+      layout: default
+  - scope:
+      type: posts
+    values:
+      layout: post
+      permalink: /blog/:title
+  - scope:
+      type: projects
+    values:
+      layout: project
+      permalink: /projects/:title
+  - scope:
+      type: tags
+    values:
+      layout: tag
+      permalink: /tags/:title
